@@ -33,12 +33,8 @@ gulp.task('js-plugins', function() {
 
 
 gulp.task('js', function(){
-    return gulp.src('src/assets/js/app/app.js')
+    return gulp.src(['src/assets/js/app/app.js','src/assets/js/app/custom.js'])
     .pipe(uglify())
-    .pipe(rename({
-        basename: "app.min",
-        extname: ".js"
-    }))
     .pipe(gulp.dest('src/assets/js'))
 })
 

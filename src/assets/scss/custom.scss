@@ -1,0 +1,10 @@
+
+$bg-color-red: darkred;
+
+.red-bg {
+  background: $bg-color-red;
+
+  .d-flex {
+    flex-direction: row-reverse;
+  }
+}
