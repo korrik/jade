@@ -25,7 +25,7 @@ basicTimeline
     targets: '.mac_animation .progress-bar',
     opacity: 1,
     complete: function(anim) {
-      loadProgressBar()
+      loadProgressBar();
       // $('.progress-bar').hide();
     }
   })
@@ -33,14 +33,21 @@ basicTimeline
   .add({
     targets: '.mac_animation .progress-bar',
     opacity: 0,
-    delay: 1500,
+    delay: 1800,
+  })
+
+  .add({
+    targets: '.mac_animation .start-button',
+    opacity: 1,
+    offset: '-=400',
+    duration: 2000,
   })
 
 
   function move() {
     var elem = document.getElementById("bar");
     var width = 1;
-    var id = setInterval(frame, 10);
+    var id = setInterval(frame, 17);
     function frame() {
        if (width >= 100) {
         clearInterval(id);

@@ -33,6 +33,11 @@ span {
     }
 }
 
+button {
+    cursor: pointer;
+}
+
+
 // typed.js styles
 #typed {
     display: inline;
@@ -72,7 +77,6 @@ span {
     position: absolute;
     top: 145px;
     
-
     .a-1 {
         position: inherit;
         height: 1px;
@@ -115,6 +119,19 @@ span {
             height: 3px;
             background-color: $blue-color;
         }
+    }
+
+    .start-button {
+        position: inherit;
+        left: 192px;
+        border: 0;
+        background: $yellow-color;
+        padding: 15px 55px;
+        font-family: 'PerfectDOS';
+        color: $black-color;
+        font-weight: 600;
+        top: -23px;
+        opacity: 0;
     }
 
     .ml5 {
