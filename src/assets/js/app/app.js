@@ -26,20 +26,22 @@ basicTimeline
     opacity: 1,
     complete: function(anim) {
       loadProgressBar();
-      // $('.progress-bar').hide();
     }
   })
 
-  .add({
-    targets: '.mac_animation .progress-bar',
-    opacity: 0,
-    delay: 1800,
-  })
+  // .add({
+  //   targets: '.mac_animation .progress-bar',
+  //   opacity: 0,
+  //   delay: 1800,
+  // })
 
   .add({
+    begin: function(anim) {
+      $('.progress-bar').hide()
+    },
     targets: '.mac_animation .start-button',
     opacity: 1,
-    offset: '-=400',
+    delay: 3000,
     duration: 2000,
   })
 

@@ -128,3 +128,107 @@ button {
     .mac_animation .ml5 .letters {
       display: inline-block;
       opacity: 0; }
+
+#typed {
+  display: inline;
+  font-family: 'ProximaNovaBold';
+  font-size: 2.5rem; }
+
+#typed-strings {
+  display: none; }
+
+.typed-cursor {
+  color: #ffffff;
+  font-size: 2.5rem;
+  opacity: 0; }
+
+.container__main {
+  min-height: 500px;
+  padding: 0 350px 0 150px;
+  margin-top: -25px; }
+
+.background__mac {
+  background-image: url(../img/old_mac.png);
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+.mac_animation {
+  position: absolute;
+  top: 145px; }
+  .mac_animation .a-1 {
+    position: inherit;
+    height: 1px;
+    width: 235px;
+    background: #ffffff;
+    left: 151px;
+    box-shadow: 0px 0px 1px 0px #fff; }
+  .mac_animation .a-2 {
+    position: inherit;
+    height: 1px;
+    width: 1px;
+    background: #ffffff;
+    opacity: 0.90;
+    margin-top: -15px;
+    left: 266px; }
+  .mac_animation .progress-bar {
+    position: inherit;
+    left: 152px;
+    top: -20px;
+    opacity: 0;
+    background: none;
+    color: #2e2e2e;
+    width: 233px; }
+    .mac_animation .progress-bar span {
+      font-family: 'PerfectDOS'; }
+    .mac_animation .progress-bar #progress {
+      width: 65%;
+      margin: 10px auto; }
+    .mac_animation .progress-bar #bar {
+      width: 1%;
+      height: 3px;
+      background-color: #2a8af8dc; }
+  .mac_animation .start-button {
+    position: inherit;
+    left: 192px;
+    border: 0;
+    background: #ffdc2e;
+    padding: 15px 55px;
+    font-family: 'PerfectDOS';
+    color: #2e2e2e;
+    font-weight: 600;
+    top: -23px;
+    opacity: 0; }
+  .mac_animation .ml5 {
+    position: relative;
+    font-weight: 300;
+    font-size: 4.5em;
+    color: #402d2d; }
+    .mac_animation .ml5 .text-wrapper {
+      position: relative;
+      display: inline-block;
+      padding-top: 0.1em;
+      padding-right: 0.05em;
+      padding-bottom: 0.15em;
+      line-height: 1em; }
+    .mac_animation .ml5 .line {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      height: 3px;
+      width: 100%;
+      background-color: #402d2d;
+      transform-origin: 0.5 0; }
+    .mac_animation .ml5 .ampersand {
+      font-family: Baskerville, "EB Garamond", serif;
+      font-style: italic;
+      font-weight: 400;
+      width: 1em;
+      margin-right: -0.1em;
+      margin-left: -0.1em; }
+    .mac_animation .ml5 .letters {
+      display: inline-block;
+      opacity: 0; }

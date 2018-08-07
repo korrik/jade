@@ -1,0 +1,140 @@
+@import '_style';
+
+
+#typed {
+    display: inline;
+    font-family: 'ProximaNovaBold';
+    font-size: 2.5rem;
+}
+
+#typed-strings {
+    display: none;
+}
+
+.typed-cursor {
+    color: $white-color;
+    font-size: 2.5rem;
+    opacity: 0;
+}
+
+
+.container__main {
+    min-height: 500px;
+    padding: 0 350px 0 150px;
+    margin-top: -25px;
+}
+
+.background__mac {
+    background-image: url(../img/old_mac.png);
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+  
+}
+
+.mac_animation {
+    position: absolute;
+    top: 145px;
+    
+    .a-1 {
+        position: inherit;
+        height: 1px;
+        width: 235px;
+        background: $white-color;
+        left: 151px;
+        box-shadow: 0px 0px 1px 0px #fff;
+    }
+
+    .a-2 {
+        position: inherit;
+        height: 1px;
+        width: 1px;
+        background: $white-color;
+        opacity: 0.90;
+        margin-top: -15px; 
+        left: 266px;
+    }
+
+    .progress-bar {
+        position: inherit;
+        left: 152px;
+        top: -20px;
+        opacity: 0;
+        background: none;
+        color: $black-color;
+        width: 233px;
+
+        span {
+            font-family: 'PerfectDOS';
+        }
+
+        #progress {
+            width: 65%;
+            margin: 10px auto;
+        }
+
+        #bar {
+            width: 1%;
+            height: 3px;
+            background-color: $blue-color;
+        }
+    }
+
+    .start-button {
+        position: inherit;
+        left: 192px;
+        border: 0;
+        background: $yellow-color;
+        padding: 15px 55px;
+        font-family: 'PerfectDOS';
+        color: $black-color;
+        font-weight: 600;
+        top: -23px;
+        opacity: 0;
+    }
+
+    .ml5 {
+        position: relative;
+        font-weight: 300;
+        font-size: 4.5em;
+        color: #402d2d;
+      
+      
+      .text-wrapper {
+        position: relative;
+        display: inline-block;
+        padding-top: 0.1em;
+        padding-right: 0.05em;
+        padding-bottom: 0.15em;
+        line-height: 1em;
+      }
+      
+      .line {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 3px;
+        width: 100%;
+        background-color: #402d2d;
+        transform-origin: 0.5 0;
+      }
+      
+      .ampersand {
+        font-family: Baskerville, "EB Garamond", serif;
+        font-style: italic;
+        font-weight: 400;
+        width: 1em;
+        margin-right: -0.1em;
+        margin-left: -0.1em;
+      }
+      
+      .letters {
+        display: inline-block;
+        opacity: 0;
+      }
+    }
+}
